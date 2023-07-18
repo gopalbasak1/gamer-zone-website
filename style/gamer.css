@@ -329,13 +329,90 @@ button{
    
 }
 
+/* Careers CSS */
+
+.careers{
+    width:1440px;
+    height: 750px;
+    margin:0 auto;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
+}
+
+.careers-heading{
+    width:700px;
+    margin-left:40px;
+}
+
+.careers-heading h2{
+    color: #FFF;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+}
+.careers-heading p{
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+
+}
+
+.careers-container{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.c-right{
+    text-align: right;
+}
+
+.c-left{
+    margin-left:-42px;
+}
+.careers-container > ul{
+   
+}
+.careers-container li {
+    display:block;
+    list-style: none;
+}
+
+.careers-container li a{
+    text-decoration: none;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 40px;
+}
+
+.c-btn{
+    background-color: #fff;
+    color:#FF42A5;
+}
+.careers-img{
+    width:600px;
+    height: 750px;
+}
+.careers-img img{
+    width:100%;
+    height: 100%;
+}
+
+
+
+
 
 
 
 
 
 @media screen and (max-width:576px) {
-    nav, .menu, .first, .banner,.optional,.card{
+    nav, .menu, .first, .banner,.optional,.card, .careers{
         flex-direction: column;
 
     }
@@ -384,6 +461,13 @@ button{
         padding-left: 23px;
     }
 
+    .careers{
+        height: 1156px;
+    }
+
+    .careers-img{
+        padding-top:65px;
+    }
 }
 
 @media screen and (min-width:576px) and (max-width:960px) {
@@ -413,5 +497,9 @@ button{
 
     .card {
         padding-left: 110px;
+    }
+
+    .careers-heading {
+        padding-left: 102px;
     }
 }
