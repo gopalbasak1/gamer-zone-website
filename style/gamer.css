@@ -1,14 +1,20 @@
+/* *{
+    padding:0;
+    margin:0;
+} */
+
 body{
     font-family: 'Work Sans', sans-serif;
 }
 
 /* Nav CSS */
 header{
-    background: #FFF;
-    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
-    
+    width:1440px;
+    margin:0 auto;
 }
 nav{
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05); 
     height: 100px;
     display:flex;
     justify-content: space-around;
@@ -67,8 +73,10 @@ nav{
     height: 50px;
     display: flex;
     align-items: center;
+    padding-left: 15px;
     font-size: 18px;
     background-color: rgba(11, 2, 35, 0.10);
+
 }
 
 .second .youtube i{
@@ -80,6 +88,87 @@ nav{
 }
 
 
+/* Banner Section CSS */
+
+.banner{
+    width:1440px;
+    margin:0 auto;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.banner-left {
+    padding-left: 144px;
+}
+.banner-left h2{
+    color: #0B0223;
+    font-size: 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.banner-left h1{
+    font-size: 80px;
+    font-weight: 800;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.banner-left li {
+    list-style: none;
+}
+
+.banner-left li a{
+    text-decoration: none;
+    color: #534C64;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: lowercase;
+    
+}
+
+.banner-left li i{
+    padding-right:10px;
+}
+
+.b-1 i{
+   color: #FF42A5
+}
+.b-2 i{
+    color:#0B0223;
+}
+button{
+    gap:20px;
+}
+.btn-primary{
+    padding:20px 36px;
+    border-radius: 48px;
+    background:#FF42A5;
+    border:0;
+    color:#fff;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+   
+    margin-top:30px;
+}
+
+.option{
+    background-color: #4EC5F7;
+}
+.banner-right{
+   
+}
+.banner-right img {
+    width: 60%;
+    padding-left: 275px;
+}
+
+
+
 
 
 
@@ -87,7 +176,7 @@ nav{
 
 
 @media screen and (max-width:576px) {
-    nav, .menu, .first{
+    nav, .menu, .first, .banner{
         flex-direction: column;
 
     }
@@ -98,5 +187,29 @@ nav{
 
     .first li{
         padding:10px;
+    }
+    .banner{
+        padding:20px;
+    }
+    .banner-left{
+        padding-right:172px;
+    }
+    .banner-right img {
+        width: 32%;
+        padding-left: 305px;
+    }
+}
+
+@media screen and (min-width:576px) and (max-width:960px) {
+    nav{
+        flex-direction: column;
+        margin-top:20px;
+        padding:20px;
+    }
+
+    .banner{
+        flex-direction: column-reverse;
+        margin-top:100px;
+        margin-left: -46px;
     }
 }
