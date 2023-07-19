@@ -403,16 +403,95 @@ button{
     height: 100%;
 }
 
+/* Install CSS */
+
+.install{
+    width:1440px;
+    margin:200px auto;
+}
+
+.install-container{
+    /* width:1280px; */
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    gap:120px;
+}
+
+.install-left{
+    width:800px;
+    
+}
+
+.install-text{
+    width:400px;
+    margin: 0 auto;
+    text-align: right;
+
+}
+
+.install-text h2{
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+    color: #0B0223;
+}
+
+.install-text p{
+    color: #534C64;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+}
+.install-right {
+    padding-right: 5px;
+    position: relative;
+}
 
 
+/* Install 2 CSS */
 
+.install-container.two{
+    display:flex;
+}
+.install-right .big{
+    width:85%;
+    
+    
+}
 
+.install-right .small {
+    width: 45%;
+    position: absolute;
+    top: 293px;
+    left: -134px;
+}
 
+.install-right img{
+    padding-left:78px;
+}
+
+.install-right .fall {
+    width: 45%;
+    position: absolute;
+    top: 303px;
+    right: -48px;
+}
+
+.install-text.i-r {
+    width:441px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.install-text.i-r p{
+    font-size: 17px;
+}
 
 
 
 @media screen and (max-width:576px) {
-    nav, .menu, .first, .banner,.optional,.card, .careers{
+    nav, .menu, .first, .banner,.optional,.card, .careers, .install-container{
         flex-direction: column;
 
     }
@@ -465,10 +544,43 @@ button{
         height: 1156px;
     }
 
+    .install {
+        margin: 31px auto;
+        padding-bottom: 178px;
+    }
+    .install-right {
+        padding-left: 134px;
+    }
+
+    .install-right .small {
+        width: 40%;
+        top: 323px;
+        left: -39px;
+    }
     .careers-img{
         padding-top:65px;
     }
+
+    .install-container.two {
+        flex-direction: column-reverse;
+    }
+    .install-left.info{
+       
+        padding-left:80px;
+    }
+    .install-text{
+        text-align: center;
+    }
+    .install-text.i-r{
+        text-align: center;
+    }
+  
 }
+
+
+
+
+
 
 @media screen and (min-width:576px) and (max-width:960px) {
     nav{
@@ -501,5 +613,9 @@ button{
 
     .careers-heading {
         padding-left: 102px;
+    }
+
+    .install-right img {
+        padding-left: 145px;
     }
 }
