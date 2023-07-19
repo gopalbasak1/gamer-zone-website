@@ -307,8 +307,8 @@ button{
 .play-icon {
     position: absolute;
     top: 143px;
-    left: 62px;
-    visibility: hidden;
+    left: 0px;
+    /* visibility: hidden; */
     transition: .5s ease-in-out;
 
 }
@@ -327,13 +327,15 @@ button{
 
 }
 
+
 .card-info:hover .play-icon {
     visibility: visible;
     background-color: rgba(0, 0, 0, .6);
     height: 98%;
     width: 90%;
-    left: 2px;
-    top: 2px;
+    
+    left: 0px;
+    top: 0px;
     margin: 0px auto;
     border-radius: 13px;
     display:flex;
@@ -386,9 +388,6 @@ button{
 
 .c-left{
     margin-left:-42px;
-}
-.careers-container > ul{
-   
 }
 .careers-container li {
     display:block;
