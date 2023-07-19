@@ -526,9 +526,8 @@ button{
 .multi-info a {
     text-decoration: none;
     margin-right: 7px;
-
-        color: #0B0223;
-    font-size: 16px;
+    color: #0B0223;
+    font-size: 15px;
     font-weight: 600;
 }
 
@@ -697,6 +696,10 @@ footer{
     .careers-heading{
         padding-top:170px;
     }
+
+    .install-left {
+        padding-left: 219px;
+    }
     .install {
         margin: 31px auto;
         padding-bottom: 178px;
@@ -706,20 +709,21 @@ footer{
     }
 
     .install-right .big {
-        width: 95%;
+        width: 91%;
+        padding-left: 156px;
     }
 
     .install-right .small {
-        width: 40%;
-        top: 323px;
-        left: -39px;
+        width: 29%;
+        top: 285px;
+        left: 68px;
     }
 
     .install-right .fall {
-        width: 31%;
+        width: 29%;
         position: absolute;
-        top: 291px;
-        right: -4px;
+        top: 277px;
+        right: -39px;
     }
     .careers-img{
         padding-top:65px;
