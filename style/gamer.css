@@ -456,7 +456,7 @@ button{
     line-height: 30px;
 }
 .install-right {
-    padding-right: 5px;
+    padding-right: 101px;
     position: relative;
 }
 
@@ -574,7 +574,8 @@ footer{
 }
 
 .support > ul{
-    display:flex;
+    display:grid;
+    grid-template-columns: repeat(6, 1fr);
 }
 
 .support li{
@@ -590,7 +591,8 @@ footer{
 
 
 .social-link > ul{
-    display:flex;
+    display:grid;
+    grid-template-columns: repeat(6, 1fr);
 }
 
 .social-link li{
@@ -620,7 +622,8 @@ footer{
     color:black;
 }
 .policy > ul{
-    display:flex;
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .policy li{
@@ -736,9 +739,22 @@ footer{
         padding-left:140px;
     }
 
+    .support > ul, .social-link > ul{
+        grid-template-columns: repeat(3, 1fr);
+        gap:14px;
+    }
 
+    .policy > ul{
+        grid-template-columns: repeat(2, 1fr);
+        gap:25px;
+    }
 
-
+    .copy {
+        width: 128px;
+        text-align: center;
+        font-size: 8px;
+        line-height: 18px;
+    }
 
 }
 
