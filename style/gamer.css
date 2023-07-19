@@ -156,9 +156,22 @@ button{
     margin-top:30px;
 }
 
+.btn-primary:hover{
+    background-color: #4EC5F7;
+    color:#FF42A5;
+    cursor: pointer;
+}
+
 .option{
     background-color: #4EC5F7;
 }
+
+.option:hover{
+    background-color: #FF42A5;
+    color:#4EC5F7;
+    cursor: pointer;
+}
+
 .banner-right{
    
 }
@@ -507,7 +520,7 @@ button{
 .multi-info{
     display:flex;
     padding-right:20px;
-    
+    transition: .5s ease-in-out;
 }
 
 .multi-info a{
@@ -540,9 +553,94 @@ button{
     
 }
 
+/* Footer CSS */
+
+footer{
+    width:1440px;
+   
+    margin:0 auto;
+    background: #0B0223;
+    color:#fff;
+}
+
+.footer-container{
+    height: 600px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.f-w{
+    color:#fff;
+}
+
+.support > ul{
+    display:flex;
+}
+
+.support li{
+    list-style: none;
+}
+.support li a{
+    text-decoration: none;
+    padding-right:40px;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 600;
+}
 
 
+.social-link > ul{
+    display:flex;
+}
 
+.social-link li{
+    list-style: none;
+}
+.social-link li a {
+    text-decoration: none;
+    padding-right:40px;
+    color: #FFF;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.social-link li .twitter:hover{
+    color: blue;
+}
+
+.social-link li .youtube:hover{
+    color: red;
+}
+
+.social-link li .linkedin:hover{
+    color:navy;
+}
+
+.social-link li .apple:hover{
+    color:black;
+}
+.policy > ul{
+    display:flex;
+}
+
+.policy li{
+    list-style: none;
+}
+.policy li a {
+    text-decoration: none;
+    padding-right:40px;
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 17px;
+    font-weight: 500;
+}
+
+
+.copy{
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 15px;
+    font-weight: 500;
+}
 
 @media screen and (max-width:576px) {
     nav, .menu, .first, .banner,.optional,.card, .careers, .install-container{
@@ -595,9 +693,11 @@ button{
     }
 
     .careers{
-        height: 1156px;
+        height: 1270px;
     }
-
+    .careers-heading{
+        padding-top:170px;
+    }
     .install {
         margin: 31px auto;
         padding-bottom: 178px;
@@ -630,11 +730,11 @@ button{
     }
 
     .multi-top{
-        padding-left:150px;
+        padding-left:130px;
     }
   
     .multi-down{
-        padding-left:174px;
+        padding-left:140px;
     }
 
 
