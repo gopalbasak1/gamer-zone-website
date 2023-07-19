@@ -9,7 +9,7 @@ body{
 
 /* Nav CSS */
 header{
-    width:1440px;
+    width:1380px;
     margin:0 auto;
 }
 nav{
@@ -91,7 +91,7 @@ nav{
 /* Banner Section CSS */
 
 .banner{
-    width:1440px;
+    width:1380px;
     margin:0 auto;
     display:flex;
     justify-content: space-around;
@@ -183,7 +183,7 @@ button{
 
 /* Optional CSS */
 .optional{
-    width:1440px;
+    width:1380px;
     margin:50px auto;
     display:flex;
     justify-content: space-around;
@@ -233,7 +233,7 @@ button{
 /* Games CSS */
 
 .games{
-    width:1440px;
+    width:1380px;
     margin:70px auto;
 }
 .games-heading{
@@ -347,7 +347,7 @@ button{
 /* Careers CSS */
 
 .careers{
-    width:1440px;
+    width:1380px;
     height: 750px;
     margin:0 auto;
     display:flex;
@@ -418,7 +418,7 @@ button{
 /* Install CSS */
 
 .install{
-    width:1440px;
+    width:1380px;
     margin:200px auto;
 }
 
@@ -458,6 +458,7 @@ button{
 .install-right {
     padding-right: 101px;
     position: relative;
+    margin-bottom: 100px;
 }
 
 
@@ -503,59 +504,45 @@ button{
 /* Multi CSS */
 
 .multi{
-    width:1440px;
-    margin:100px auto;
+    width:1380px;
+    margin:70px auto;
 }
 
-.multi-top{
+.multi-container{
     width:1220px;
     margin:0 auto;
-    display:flex;
-    justify-content: space-evenly;
-    margin-bottom:50px;
-
+    display:grid;
+    grid-template-columns: repeat(5, 1fr);
 }
 
 .multi-info{
     display:flex;
-    padding-right:20px;
-    transition: .5s ease-in-out;
-}
-
-.multi-info a{
-   padding-right: 10px;
-   text-decoration: none;
-   color: #0B0223;
-    font-size: 17px;
-    font-weight: 700;
-}
-
-
-.multi-down{
-    width:1180px;
-    margin:0 auto;
-    display:flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:40px;
 
 }
 
-.multi-info:hover {
-    border:2px solid #FF42A5;
+.multi-info a {
+    text-decoration: none;
+    margin-right: 7px;
+
+        color: #0B0223;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.multi-info:hover{
+    border:1px solid #FF42A5;
     border-radius: 30px;
-    padding-left:8px;
-    margin-right:14px;
 }
 
 
-.multi-info a:hover {
-    color:#FF42A5;
-    
-}
 
 /* Footer CSS */
 
 footer{
-    width:1440px;
+    width:1380px;
    
     margin:0 auto;
     background: #0B0223;
@@ -644,7 +631,16 @@ footer{
     font-weight: 500;
 }
 
+
+
+
+
 @media screen and (max-width:576px) {
+
+    header, .banner, .optional, .games, .install, .careers, .multi, footer{
+        width:700px;
+        margin-left:70px;
+    }
     nav, .menu, .first, .banner,.optional,.card, .careers, .install-container{
         flex-direction: column;
 
@@ -664,8 +660,8 @@ footer{
         padding-right:172px;
     }
     .banner-right img {
-        width: 32%;
-        padding-left: 305px;
+        width: 70%;
+        padding-left: 94px;
     }
     .optional-left{
         padding-left: 105px;
@@ -681,9 +677,10 @@ footer{
         padding-left: 46px;
     }
     .card-info {
-        width: 656px;
+        width: 700px;
         height: 793px;
         margin: 0 auto;
+        padding-right: 636px;
     }
 
     .card-text {
@@ -705,13 +702,24 @@ footer{
         padding-bottom: 178px;
     }
     .install-right {
-        padding-left: 134px;
+        padding-left: 74px;
+    }
+
+    .install-right .big {
+        width: 95%;
     }
 
     .install-right .small {
         width: 40%;
         top: 323px;
         left: -39px;
+    }
+
+    .install-right .fall {
+        width: 31%;
+        position: absolute;
+        top: 291px;
+        right: -4px;
     }
     .careers-img{
         padding-top:65px;
@@ -730,6 +738,12 @@ footer{
     .install-text.i-r{
         text-align: center;
     }
+    .careers-heading p {
+        padding-right: 28px;
+    }
+    .c-right {
+        padding-right: 40px;
+    }
 
     .multi-top{
         padding-left:130px;
@@ -737,6 +751,11 @@ footer{
   
     .multi-down{
         padding-left:140px;
+    }
+
+    .multi-container{
+        width:700px;
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .support > ul, .social-link > ul{
